@@ -49,6 +49,24 @@ header h1 {
   padding: 2em 0;
 }
 
+#menu{
+  text-align: left;
+}
+#menu1{
+  text-align: center
+}
+#menu3{
+  float: right;
+  background-color: #3e2723;
+  width: 500px;
+}
+#menu2{
+  float:left;
+  background-color: aqua;
+  margin-left: 100px;
+  width: 500px;
+}
+
 .service {
   display: inline-block;
   margin: 20px;
@@ -63,6 +81,9 @@ header h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+#contactus{
+  text-align: center;
 }
 
 #contact input, #contact textarea, #contact button {
