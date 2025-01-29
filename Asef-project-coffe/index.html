@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bliss</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+
+ 
+<script>
+      $(document).ready(function(){
+          $("#hamburger").click(function(){
+              $("#slidedown").fadeIn(300);
+          });
+          $("#close").click(function(){
+              $("#slidedown").fadeOut(300);
+          });
+      });
+</script>
+ 
+
+
+
+  
+  <div id="navpc">
+      <div class="logosection">
+          <!-- <img src="../foto/logo.png"> -->
+          <p>BeanHaven</p>
+      </div>
+      
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#form"><button class="registerbutton">Contact</button></a></li>
+      </ul>
+  </div>
+
+  <div id="navmobile">
+      <div class="logosection">
+          <!-- <img src="../foto/logo.png"> -->
+          <p>BeanHaven</p>
+      </div>
+
+      <ion-icon name="menu-outline" id="hamburger"></ion-icon>
+  </div>
+
+  <div id="slidedown">
+  <div id="navmobile">
+      <div class="logosection">
+          <!-- <img src="../foto/logo.png"> -->
+          <p>BeanHaven</p>
+      </div>
+      
+      <ion-icon name="close-outline" id="close"></ion-icon>
+  </div>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+          <li><a href="#form"><button class="registerbutton">Contact</button></a></li>
+
+         
+   
+      </ul>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+      <section id="hero">
+        <div class="container">
+          <h2>The Best Coffee in Town</h2>
+          <p>Delicious, freshly brewed coffee made just for you.</p>
+        </div>
+      </section>
+      <section id="services" class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+          <h3>Espresso</h3>
+          <p>High-quality espresso made with a blend of the finest beans.</p>
+        </div>
+        <div class="service">
+          <h3>Cappuccino</h3>
+          <p>Rich, creamy cappuccino topped with a velvety foam.</p>
+        </div>
+        <div class="service">
+          <h3>Latte</h3>
+          <p>Smooth latte with your choice of flavored syrups.</p>
+        </div>
+      </section>
+      <h2 id="menu1">Our Menu</h2>
+      <section id="menu" class="container">
+        <div id="div1">
+        <ul type="none">
+          <li>Espresso - $2.50</li>
+          <li>Cappuccino - $3.00</li>
+          <li>Latte - $3.50</li>
+          <li>Mocha - $4.00</li>
+          <li>Americano - $2.00</li>
+          <li>Macchiato - $2.75</li>
+        <li>Flat White - $3.50</li>
+        <li>Affogato - $4.00</li>
+         <li>Ristretto - $2.50</li>
+         <li>Cortado - $3.00</li>
+        </ul>
+      </div>
+      <div id="div2">
+        <ul type="none">
+          <li>Red Eye - $3.75</li>
+          <li>Irish Coffee - $5.00</li>
+          <li>Turkish Coffee - $3.50</li>
+          <li>Vienna Coffee - $4.00</li>
+          <li>Doppio - $2.75</li>
+          <li>Café au Lait - $3.25</li>
+          <li>Long Black - $3.00</li>
+          <li>Breve - $3.50</li>
+          <li>Lungo - $2.75</li>
+          <li>Espresso Con Panna - $3.00</li>
+        </ul>
+      </div>
+      <div id="div3">
+        <ul type="none">
+          
+        <li>Iced Latte - $3.75</li>
+        <li>Cold Brew - $4.00</li>
+        <li>Nitro Cold Brew - $4.50</li>
+        <li>Mazagran - $3.50</li>
+        <li>Café Bombón - $3.75</li>
+        <li>Espresso Romano - $3.00</li>
+        <li>Frappe - $4.00</li>
+        <li>Café Cubano - $3.25</li>
+        <li>Guayoyo - $2.75</li>
+        <li>Café de Olla - $3.50</li>
+        </ul>
+      </div>
+      </section>
+      <h2 id="contactus">Contact Us</h2>
+      <section id="contact" class="container">
+        
+        <img id="contact-photo"src="coffe_house.webp">
+        <form action="#" id="form" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <footer>
+        <div class="container">
+          <p>&copy; 2025 Coffee Bliss</p>
+        </div>
+      </footer>
+</body>
+</html>
